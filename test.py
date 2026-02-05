@@ -69,6 +69,8 @@ bill_value = float(input("Enter bill amount: "))
 if service == "Bad":
     print(bill_value * 0)
 elif service == "Okay":
-
-
-
+    print(bill_value * 0.15)
+elif service == "Good":
+    print(bill_value * 0.20)
+elif service == "Great":
+    print(bill_value * 0.25)
