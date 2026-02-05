@@ -57,6 +57,18 @@ elif temp == 68:
 else:
     print('cold') """
 
+""" thenumber = int(input("Enter a number: "))
+if int(thenumber) % 2 == 0:
+        print("even")
+else:
+        print("odd")
+ """
+
+service = input("Bad, Okay, Good, or Great")
+bill_value = float(input("Enter bill amount: "))
+if service == "Bad":
+    print(bill_value * 0)
+elif service == "Okay":
 
 
 
