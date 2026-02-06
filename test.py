@@ -63,8 +63,7 @@ if int(thenumber) % 2 == 0:
 else:
         print("odd")
  """
-
-service = input("Bad, Okay, Good, or Great")
+""" service = input("How was the service? (Bad, Okay, Good, Great) ")
 bill_value = float(input("Enter bill amount: "))
 if service == "Bad":
     print(bill_value * 0)
@@ -73,4 +72,20 @@ elif service == "Okay":
 elif service == "Good":
     print(bill_value * 0.20)
 elif service == "Great":
-    print(bill_value * 0.25)
+    print(bill_value * 0.25) """
+
+""" number = int(input("Enter a number to get its factors: "))
+if int(number) > 0:
+    for i in range(1, number + 1):
+        if number % i == 0:
+            print(i) """
+
+number_1 = int(input("Enter first number: "))
+number_2 = int(input("Enter second number: "))
+if int(number_1) > 0:
+    for i in range(2, number_2 + 1):
+        if i == 1:
+            print("GCF is: 1")
+        elif number_1 % i == 0:
+            print(f"The GCF is: {i}")
+                    
