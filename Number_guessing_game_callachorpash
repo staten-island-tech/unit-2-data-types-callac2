@@ -1,14 +1,14 @@
 import random
 x = random.randint(1,10)
 x = [1,2,3,4,5,6,7,8,9,10]
-number = int(input("Enter a number: "))
+The_number = int(input("Enter a number between 1 and 10: "))
 
-while number != x:
+while The_number != x:
     
-        print("incorrect, try again")
-        number = int(input("Enter a number: "))
+        print("sorry, incorrect! Please try again")
+        The_number = int(input("Enter a number: "))
 
-if number == x:
-        print("You are correct! Good job!!!")
+if The_number == x:
+        print("You are correct! Amazing job!")
 
 
