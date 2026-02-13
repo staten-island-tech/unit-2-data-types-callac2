@@ -82,9 +82,9 @@ if int(number) > 0:
 
 """ number_1 = int(input("Enter first number: "))
 number_2 = int(input("Enter second number: "))
-if int(number_1) > 0:
-    print("These are the common factors. The GCF is the largest one.")
-    for i in range(1, number_1 + 1):
+if int(number_1 and number_2) > 0:
+    for i in range(1, number_1 and number_2 + 1):
+      if number_1 and number_2 % i == 0:
         if number_1 % i == 0:
             if number_2 % i == 0:
              print(i) """

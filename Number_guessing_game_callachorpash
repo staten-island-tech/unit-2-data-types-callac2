@@ -1,14 +1,20 @@
 import random
 x = random.randint(1,10)
-x = [1,2,3,4,5,6,7,8,9,10]
-The_number = int(input("Enter a number between 1 and 10: "))
 
-while The_number != x:
+
+guess = int(input("Enter a number between 1 and 10: "))
+
+while guess == x:
     
-        print("sorry, incorrect! Please try again")
-        The_number = int(input("Enter a number: "))
+        print("correct!")
+else:
+        if guess > int(x):
+                print("Please guess again! The number is lower than what you guessed:")
+                guess = int(input ("next guess:"))
+        
+        if guess < int(x):
+                print("Please guess again! The number is higher than what you guessed:")
+                guess = int(input ("next guess:"))
 
-if The_number == x:
-        print("You are correct! Amazing job!")
 
 
