@@ -7,6 +7,8 @@ guess = int(input("Enter a number between 1 and 10: "))
 while guess == int(x):
     
         print("correct")
+        
+        break
 
 else:
         if guess  > int(x):
@@ -16,4 +18,39 @@ else:
         if guess < int(x):
                 print("Please guess again! The number is higher than what you guessed:")
                 guess = int(input ("next guess:"))
+
+        
+
+        while guess == int(x):
+    
+                print("correct")
+
+                break
+        else:
+
+
+                if guess  > int(x):
+                        print("Please guess again! The number is lower than what you guessed:")
+                        guess = int(input ("next guess:"))
+        
+                if guess < int(x):
+                        print("Please guess again! The number is higher than what you guessed:")
+                        guess = int(input ("next guess:"))
+
+
+
+                        while guess == int(x):
+    
+                                print("correct")
+
+                                break
+                        else:
+
+                                if guess  > int(x):
+                                        print("Please guess again! The number is lower than what you guessed:")
+                                        guess = int(input ("next guess:"))
+        
+                                if guess < int(x):
+                                        print("Please guess again! The number is higher than what you guessed:")
+                                        guess = int(input ("next guess:"))
 
