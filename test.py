@@ -88,3 +88,15 @@ if int(number_1 and number_2) > 0:
         if number_1 % i == 0:
             if number_2 % i == 0:
              print(i) """
+
+
+C = "c"
+e = "."
+def occupied_places(x,y,t):
+
+
+    for i in range(x):
+        if(y[i] == "c" and t[i] == "c"):
+                found += 1
+    print(found)
+occupied_places(5,"ccccc","ccccc")
