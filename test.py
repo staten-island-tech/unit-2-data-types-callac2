@@ -89,7 +89,7 @@ if int(number_1 and number_2) > 0:
             if number_2 % i == 0:
              print(i) """
 
-
+""" 
 C = "c"
 e = "."
 def occupied_places(x,y,t):
@@ -99,4 +99,11 @@ def occupied_places(x,y,t):
         if(y[i] == "c" and t[i] == "c"):
                 found += 1
     print(found)
-occupied_places(5,"ccccc","ccccc")
+occupied_places(5,"ccccc","ccccc") """
+
+def which_language(f,e):
+    text = str(input("enter text here:"))
+    S = "s"
+    T = "t"
+    for i in range(y):
+
