@@ -101,9 +101,23 @@ def occupied_places(x,y,t):
     print(found)
 occupied_places(5,"ccccc","ccccc") """
 
-def which_language(f,e):
-    text = str(input("enter text here:"))
-    S = "s"
-    T = "t"
-    for i in range(y):
+
+letter = str(input("enter text here:"))
+t = "t"
+s = "s"
+def which_language(x,t,s):
+    for letter in range(x): 
+        if letter() == "s":
+            s += s+1
+            
+        elif letter == "t" or letter == "T":
+            t = t+1
+            
+            if s >= t:
+                print("French")
+        else: 
+            print ("English")
+
+            
+        
 
