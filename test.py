@@ -101,23 +101,47 @@ def occupied_places(x,y,t):
     print(found)
 occupied_places(5,"ccccc","ccccc") """
 
+""" def which_language(x,t,s):
 
-letter = str(input("enter text here:"))
-t = "t"
-s = "s"
-def which_language(x,t,s):
-    for letter in range(x): 
-        if letter() == "s":
+    t = "T"
+    s = "S"
+    s = 0
+    t = 0
+
+    letter = str(input("enter text here:"))
+for letter in range(input): 
+       
+        if letter.lower() == "s":
             s += s+1
             
-        elif letter == "t" or letter == "T":
-            t = t+1
+        if letter.lower() == "t":
+            t += t+1
             
             if s >= t:
                 print("French")
-        else: 
+        elif s<= t:
+
             print ("English")
 
-            
-        
+             """
+def numberhoni(search):
+    h == 0
+    o == 0
+    n == 0
+    i == 0
+    for letter in range:
+        if letter == "H":
+            h += h+1
+        if letter == "O":
+            o += o+1
+        if letter == "N":
+            n += n+1
+        if letter == "I":
+            i += i+1
+
+    print (h, o, n, i)
+numberhoni("HHHHOOOONNNNIIII")
+
+
+    
 
