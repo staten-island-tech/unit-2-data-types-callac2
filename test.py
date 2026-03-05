@@ -124,23 +124,26 @@ for letter in range(input):
             print ("English")
 
              """
-def numberhoni(search):
-    h == 0
-    o == 0
-    n == 0
-    i == 0
-    for letter in range:
-        if letter == "H":
-            h += h+1
-        if letter == "O":
-            o += o+1
-        if letter == "N":
-            n += n+1
-        if letter == "I":
-            i += i+1
+def numberhoni(word):
+    count = 0
+    state = 0
+    for char in word:
+        if state == 0 and char.upper() == "H":
+            count = 1
+        elif state == 1 and char.upper() == "O":
+            count = 2
+        elif state == 2 and char.upper() == "N":
+            count = 3
+        elif state == 3 and char.upper() == "I":
+            count += 1
+            state = 0
 
-    print (h, o, n, i)
-numberhoni("HHHHOOOONNNNIIII")
+
+    print (count)
+    print(state)
+numberhoni("HONIHONI")
+
+
 
 
     
