@@ -124,7 +124,7 @@ for letter in range(input):
             print ("English")
 
              """
-def numberhoni(word):
+""" def numberhoni(word):
     count = 0
     state = 0
     for char in word:
@@ -141,7 +141,7 @@ def numberhoni(word):
 
     print (count)
     print(state)
-numberhoni("HONIHONI")
+numberhoni("HONIHONI") """
 
 
 
