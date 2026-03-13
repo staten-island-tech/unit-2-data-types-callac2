@@ -143,14 +143,42 @@ for letter in range(input):
     print(state)
 numberhoni("HONIHONI") """
 
-def gamble (quarter, machine_1, machine_2, machine_3):
+def gamble (quarter, machine_1, machine_2, machine_3,turns):   
     quarter = 0
     machine_1 = 0
     machine_2 = 0
     machine_3 = 0
     turns = 0
 
-while 
+    while quarter > 0:
+        if machine_1 % 35 == 0:
+            quarter+=29
+            turns+=1
+
+        else:
+            quarter!=1
+            turns+=1
+        
+        if machine_2 % 100 == 0:
+            quarter+=59
+            turns+=1
+        else:
+            quarter!=1
+            turns+=1
+        
+        if machine_3 % 10 ==0:
+            quarter+=8
+            turns+=1
+        else:
+            quarter!=1
+            turns+=1
+        print(turns)
+gamble(48,[3,10,4])
+print(f'Martha plays {turns} times before going broke. :C')
+
+    
+
+
 
 
 
