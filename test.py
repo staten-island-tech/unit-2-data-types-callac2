@@ -143,22 +143,35 @@ for letter in range(input):
     print(state)
 numberhoni("HONIHONI") """
 
-def gamble_input(quarter,machine_1, machine_2, machine_3,turns):   
+def gamble_input(quarter, machine_1, machine_2, machine_3,turns):   
     quarter = 0
     m1=machine_1
     m2=machine_2
     m3=machine_3
-    turns=0
+    turns = 0
 
-    while quarter > 0:
-        if m1 % 35 == 0:
-            quarter+=29
+
+while quarter >= 1:
+    quarter = quarter - 1
+    if m1 == 0:
+        turns = turns + 1
+    if turns == 35:
+        turns = 0
+        quarter = quarter + 30
+    
+
+    else:
+        if quarter!=1:
             turns+=1
-
-        elif m2 % 100 == 0:
+        
+        if m2 % 100 == 0:
             quarter+=59
             turns+=1
-        elif m3 % 10 ==0:
+        else:
+            quarter!=1
+            turns+=1
+        
+        if m3 % 10 ==0:
             quarter+=8
             turns+=1
         else:
